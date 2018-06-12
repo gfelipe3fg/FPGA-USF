@@ -1,0 +1,402 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jun 12 10:11:50 2018
+# Process ID: 6996
+# Current directory: C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.runs/synth_1
+# Command line: vivado.exe -log lock_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lock_top.tcl
+# Log file: C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.runs/synth_1/lock_top.vds
+# Journal file: C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lock_top.tcl -notrace
+Command: synth_design -top lock_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8540 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 357.832 ; gain = 99.203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lock_top' [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/lock_top.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/debouncer.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (1#1) [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/debouncer.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'bcd_2_bin' [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/bcd_2_bin.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'bcd_2_bin' (2#1) [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/bcd_2_bin.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'digital_lock' [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/digital_lock.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'digital_lock' (3#1) [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/digital_lock.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'hex_to_sseg' [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/hex_to_sseg.vhd:41]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'sseg_reg' in module 'hex_to_sseg' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/hex_to_sseg.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'hex_to_sseg' (4#1) [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/hex_to_sseg.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'disp_mux' [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/disp_mux.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'disp_mux' (5#1) [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/disp_mux.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'lock_top' (6#1) [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/lock_top.vhd:44]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 412.258 ; gain = 153.629
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 412.258 ; gain = 153.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 412.258 ; gain = 153.629
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/constrs_1/imports/hw5-felipe-gutierrez/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/constrs_1/imports/hw5-felipe-gutierrez/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/constrs_1/imports/hw5-felipe-gutierrez/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lock_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lock_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 747.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 747.180 ; gain = 488.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 747.180 ; gain = 488.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 747.180 ; gain = 488.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debouncer'
+INFO: [Synth 8-5546] ROM "tick_20ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "db_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'hex2_reg[3:0]' into 'hex3_reg[3:0]' [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/digital_lock.vhd:63]
+INFO: [Synth 8-4471] merging register 'hex1_reg[3:0]' into 'hex3_reg[3:0]' [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/digital_lock.vhd:64]
+WARNING: [Synth 8-6014] Unused sequential element hex2_reg was removed.  [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/digital_lock.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element hex1_reg was removed.  [C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.srcs/sources_1/new/digital_lock.vhd:64]
+INFO: [Synth 8-802] inferred FSM for state register 'next_s_reg' in module 'digital_lock'
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                              000 |                              000
+              wait_one_1 |                              001 |                              001
+              wait_one_2 |                              010 |                              010
+              wait_one_3 |                              011 |                              011
+                     one |                              100 |                              100
+             wait_zero_1 |                              101 |                              101
+             wait_zero_2 |                              110 |                              110
+             wait_zero_3 |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'debouncer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        programming_mode |                             0000 |                             0000
+                 p_wait1 |                             0001 |                             0001
+                 p_wait2 |                             0010 |                             0010
+                 p_wait3 |                             0011 |                             0011
+             normal_mode |                             0100 |                             0100
+                 n_wait1 |                             0101 |                             0101
+                 n_wait2 |                             0110 |                             0110
+                 n_wait3 |                             0111 |                             0111
+                 compare |                             1000 |                             1000
+                  unlock |                             1001 |                             1001
+                 failing |                             1010 |                             1010
+                  locked |                             1011 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'next_s_reg' using encoding 'sequential' in module 'digital_lock'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 747.180 ; gain = 488.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  12 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 14    
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 5     
+	  12 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 10    
+	  12 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debouncer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+Module digital_lock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  12 Input     16 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 14    
+	  12 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 13    
+Module disp_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "debounce_U/tick_20ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce_R/tick_20ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce_D/tick_20ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce_C/tick_20ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce_L/tick_20ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'lock_unit/hex3_reg[0]' (FDE) to 'lock_unit/hex3_reg[1]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/hex3_reg[1]' (FDE) to 'lock_unit/hex3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/hex3_reg[2]' (FDE) to 'lock_unit/hex3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[0]' (FDE) to 'lock_unit/my_led_reg[1]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[1]' (FDE) to 'lock_unit/my_led_reg[2]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[2]' (FDE) to 'lock_unit/my_led_reg[3]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[3]' (FDE) to 'lock_unit/my_led_reg[4]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[4]' (FDE) to 'lock_unit/my_led_reg[5]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[5]' (FDE) to 'lock_unit/my_led_reg[6]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[6]' (FDE) to 'lock_unit/my_led_reg[7]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[7]' (FDE) to 'lock_unit/my_led_reg[8]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[8]' (FDE) to 'lock_unit/my_led_reg[9]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[9]' (FDE) to 'lock_unit/my_led_reg[10]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[10]' (FDE) to 'lock_unit/my_led_reg[11]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[11]' (FDE) to 'lock_unit/my_led_reg[12]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[12]' (FDE) to 'lock_unit/my_led_reg[13]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[13]' (FDE) to 'lock_unit/my_led_reg[14]'
+INFO: [Synth 8-3886] merging instance 'lock_unit/my_led_reg[14]' (FDE) to 'lock_unit/my_led_reg[15]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 747.180 ; gain = 488.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 747.180 ; gain = 488.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 764.355 ; gain = 505.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 765.887 ; gain = 507.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 765.887 ; gain = 507.258
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 765.887 ; gain = 507.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 765.887 ; gain = 507.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 765.887 ; gain = 507.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 765.887 ; gain = 507.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 765.887 ; gain = 507.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     2|
+|4     |LUT2   |     7|
+|5     |LUT3   |     6|
+|6     |LUT4   |     5|
+|7     |LUT5   |    15|
+|8     |LUT6   |    49|
+|9     |FDCE   |    22|
+|10    |FDRE   |    92|
+|11    |IBUF   |    10|
+|12    |OBUF   |    27|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+-------------+------+
+|      |Instance     |Module       |Cells |
++------+-------------+-------------+------+
+|1     |top          |             |   248|
+|2     |  debounce_C |debouncer    |     7|
+|3     |  debounce_D |debouncer_0  |     7|
+|4     |  debounce_L |debouncer_1  |     7|
+|5     |  debounce_R |debouncer_2  |     8|
+|6     |  debounce_U |debouncer_3  |    41|
+|7     |  disp       |disp_mux     |    28|
+|8     |  lock_unit  |digital_lock |   112|
++------+-------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 765.887 ; gain = 507.258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 765.887 ; gain = 172.336
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 765.887 ; gain = 507.258
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+65 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 765.887 ; gain = 519.887
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Vivado/Projects/hw5-felipe-gutierrez/hw5-felipe-gutierrez.runs/synth_1/lock_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lock_top_utilization_synth.rpt -pb lock_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 765.887 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 12 10:12:44 2018...

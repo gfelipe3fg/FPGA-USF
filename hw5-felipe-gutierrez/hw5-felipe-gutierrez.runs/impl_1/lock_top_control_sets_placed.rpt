@@ -1,0 +1,79 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Tue Jun 12 10:13:35 2018
+| Host         : DESKTOP-74JJDOE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lock_top_control_sets_placed.rpt
+| Design       : lock_top
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    47 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            8 |
+|     12 |            2 |
+|    16+ |            3 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              39 |           13 |
+| No           | No                    | Yes                    |              18 |            5 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              68 |           23 |
+| Yes          | No                    | Yes                    |               4 |            2 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------+--------------------+------------------+----------------+
+|  Clock Signal  |                Enable Signal               |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------+--------------------+------------------+----------------+
+|  clk_IBUF_BUFG | lock_unit/hex00                            |                    |                2 |              4 |
+|  clk_IBUF_BUFG | lock_unit/FSM_sequential_next_s[3]_i_1_n_0 | debounce_C/btnC_db |                2 |              4 |
+|  clk_IBUF_BUFG | lock_unit/num20                            |                    |                1 |              4 |
+|  clk_IBUF_BUFG | lock_unit/key30                            |                    |                2 |              4 |
+|  clk_IBUF_BUFG | lock_unit/num10                            |                    |                1 |              4 |
+|  clk_IBUF_BUFG | lock_unit/key20                            |                    |                1 |              4 |
+|  clk_IBUF_BUFG | lock_unit/key10                            |                    |                2 |              4 |
+|  clk_IBUF_BUFG | lock_unit/num30                            |                    |                1 |              4 |
+|  clk_IBUF_BUFG | lock_unit/final_key0                       |                    |                4 |             12 |
+|  clk_IBUF_BUFG | lock_unit/number0                          |                    |                2 |             12 |
+|  clk_IBUF_BUFG | lock_unit/my_led0                          |                    |                7 |             16 |
+|  clk_IBUF_BUFG |                                            | btnC_IBUF          |                5 |             18 |
+|  clk_IBUF_BUFG |                                            |                    |               13 |             39 |
++----------------+--------------------------------------------+--------------------+------------------+----------------+
+
+
